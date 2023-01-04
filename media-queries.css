@@ -44,13 +44,11 @@
 
 @media (max-width: 990px) {
   .cta-container {
-    width: auto;
     gap: 0px;
-    grid-template-columns: 1fr;
   }
 
-  .info {
-    padding: 60px 100px;
+  .cta-info {
+    padding: 40px;
     margin: 0px;
   }
 
@@ -87,8 +85,16 @@
     padding: 10px;
   }
 
-  #about .cta-container {
+  .cta-container {
     grid-template-columns: 1fr;
+  }
+
+  .cta-info {
+    grid-row: 2/ 3;
+  }
+
+  .cta-img {
+    grid-row: 1/ 2;
   }
 
   .sale-img-wrapper {
