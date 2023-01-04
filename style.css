@@ -39,12 +39,7 @@ section {
 
 /* Navbar */
 #navbar {
-  padding: 14px;
   transition: 0.3s ease-in-out;
-}
-
-#navbar .container-fluid {
-  margin: 0px 26px;
 }
 
 .navbar-clr {
@@ -59,6 +54,7 @@ section {
   text-decoration: none;
   font-size: 26px;
   font-weight: 700;
+  margin: 0px;
 }
 
 .nav-link {
@@ -296,6 +292,10 @@ section#hero {
   padding: 150px 0px 60px 0px;
 }
 
+.feature-container {
+  margin-bottom: 30px;
+}
+
 /* sale */
 
 #sale {
@@ -369,9 +369,6 @@ section#hero {
 }
 
 /* Contacts */
-
-#contacts {
-}
 
 .no-card-border {
   border: none;
