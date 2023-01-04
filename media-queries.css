@@ -1,0 +1,160 @@
+@media (max-width: 1280px) {
+  #service-carousel {
+    height: 550px;
+  }
+
+  .normal-text {
+    margin: 0px 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-heading {
+    font-size: 40px;
+  }
+
+  /* About */
+  .florit-container {
+    padding-bottom: 50px;
+  }
+
+  .florist-img-container {
+    margin-top: 50px;
+  }
+
+  .behind-img {
+    position: static;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .over-img {
+    display: none;
+  }
+
+  #service-carousel {
+    height: 500px;
+  }
+
+  .sale-img-wrapper {
+    width: 700px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 990px) {
+  .cta-container {
+    width: auto;
+    gap: 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    padding: 60px 100px;
+    margin: 0px;
+  }
+
+  .cta-img {
+    width: 100%;
+    height: 400px;
+  }
+
+  #service-carousel {
+    height: 400px;
+  }
+
+  #about .card-title {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .event-pricing-card {
+    padding: 40px 25px;
+  }
+
+  .normal-text {
+    margin: 0px 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 32px;
+  }
+
+  #about .card-title {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  #about .cta-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sale-img-wrapper {
+    width: 500px;
+    height: 150px;
+  }
+
+  .portfolio-card {
+    padding: 20%;
+  }
+
+  .normal-text {
+    margin: 0px 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sale-img-wrapper {
+    width: 100%;
+    height: 150px;
+  }
+
+  .normal-text {
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero-carousel {
+    height: 600px;
+  }
+
+  #hero-carousel .carousel-inner {
+    height: 600px;
+  }
+
+  #hero-carousel .carousel-item img {
+    width: 100%;
+    min-height: 600px;
+  }
+
+  #service-carousel {
+    height: 2050px;
+  }
+}
+
+@media (max-width: 430px) {
+  #hero-carousel {
+    height: 500px;
+  }
+
+  #hero-carousel .carousel-inner {
+    height: 500px;
+  }
+
+  #hero-carousel .carousel-item img {
+    width: 100%;
+    min-height: 500px;
+  }
+
+  .sale-img-wrapper {
+    width: 100%;
+    height: 150px;
+  }
+
+  #service-carousel {
+    height: 1550px;
+  }
+}

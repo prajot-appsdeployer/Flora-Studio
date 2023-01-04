@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* Primary color #246f5c */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #246f5c;
+}
+
+p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Crimson Text", serif;
+}
+
+section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.section-heading {
+  font-size: 46px;
+}
+
+.section-text {
+  font-style: normal;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Navbar */
+#navbar {
+  padding: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar .container-fluid {
+  margin: 0px 26px;
+}
+
+.navbar-clr {
+  background-color: rgba(36, 112, 93, 0.95);
+}
+
+.add-shadow {
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.404) !important;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.nav-link {
+  display: inline-block;
+  margin: 0px 12px !important;
+  padding-bottom: 4px;
+
+  font-size: 18px;
+  /* Made by Prajot Baloliya */
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  transition: 0.3s ease;
+  color: #faba84 !important;
+  border-bottom: 1px solid #faba84;
+}
+
+#navbar .active {
+  border-bottom: 1px solid #faba84;
+}
+
+/* Carousel */
+
+section#hero {
+  padding: 0px 0px 70px 0px !important;
+}
+
+#hero-carousel {
+  height: 800px;
+}
+
+#hero-carousel .carousel-inner {
+  height: 800px;
+}
+
+#hero-carousel .carousel-item img {
+  min-height: 800px;
+  object-fit: cover;
+  overflow: hidden !important;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  color: #246f5c;
+}
+
+.crl-sm-text {
+  font-size: 20px;
+}
+
+.crl-text {
+  font-size: 46px;
+}
+
+.crl-btn {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  color: #246f5c;
+  padding-top: 10px;
+}
+
+/* prev btn */
+.crl-prev::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #246f5c;
+}
+
+.crl-prev:hover::after {
+  animation: prev-line-effect 1.5s;
+}
+
+@keyframes prev-line-effect {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  30% {
+    transform: scaleX(0);
+    transform-origin: top right;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: top right;
+  }
+}
+
+/* next btn */
+
+.crl-next::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #246f5c;
+}
+
+.crl-next:hover::after {
+  animation: next-line-effect 1.5s;
+}
+
+@keyframes next-line-effect {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  30% {
+    transform: scaleX(0);
+    transform-origin: top left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: top left;
+  }
+}
+
+/* florist */
+
+.florit-container {
+  padding: 150px 0px;
+  color: #246f5c;
+  position: relative;
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.florist-img-container {
+  position: relative;
+}
+
+.behind-img {
+  position: absolute;
+  right: 30%;
+}
+
+.over-img {
+  position: absolute;
+  top: 15%;
+  right: 50%;
+}
+
+/* About / Services */
+#about {
+  background-image: url(https://mobirise.com/extensions/floram4/floral-studio/assets/images/background2.jpg);
+}
+
+#service-carousel {
+  height: 620px;
+  margin-bottom: 100px;
+}
+
+.card,
+.card img {
+  border-radius: 0px;
+}
+
+.card {
+  height: 100%;
+}
+
+#about .card-title {
+  font-size: 22px;
+  padding: 30px;
+}
+
+#service-carousel .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #246f5c;
+}
+
+/* cta */
+.cta {
+  background-color: #246f5c;
+}
+
+.cta-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
+}
+
+.info {
+  padding: 40px 100px;
+}
+
+.btn {
+  padding: 10px 35px;
+  border-radius: 0px;
+  font-weight: 400;
+}
+
+.btn-light {
+  background-color: #d8e3d5 !important;
+  border-color: #d8e3d5 !important;
+  color: #10634e !important;
+}
+
+.btn-light:hover {
+  background-color: #c4d5c0 !important;
+}
+
+.cta-img {
+  width: auto;
+  object-fit: cover;
+}
+
+/* features */
+.features {
+  padding: 150px 0px 60px 0px;
+}
+
+/* sale */
+
+#sale {
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+.sale-img-wrapper {
+  width: 800px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sale-img {
+  width: inherit;
+}
+
+.sale-info {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.sale-banner-bottom {
+  background-color: #e0ecdc;
+  height: 14px;
+}
+
+/* portfolio */
+#portfolio {
+  background-image: url(https://mobirise.com/extensions/floram4/floral-studio/assets/images/background1-1-1085x595.jpg);
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(https://mobirise.com/extensions/floram4/floral-studio/assets/images/gallery1.jpg);
+}
+
+.portfolio-heading {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* pricing  */
+
+#pricing {
+  background-image: url(https://mobirise.com/extensions/floram4/floral-studio/assets/images/background1-1-1085x595.jpg);
+}
+
+.flower-pricing .card {
+  border: none;
+}
+
+.product-name {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.event-pricing-card {
+  background-color: #fef1e6 !important;
+  border: 1px solid #338873;
+  padding: 70px 45px;
+}
+
+/* Contacts */
+
+#contacts {
+}
+
+.no-card-border {
+  border: none;
+}
+
+/* out Client */
+
+#clients {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e0ecdc;
+}
+
+#clients .row {
+  row-gap: 30px;
+}
+
+#clients img {
+  width: 120px;
+  padding: 5px;
+  margin: auto;
+}
+
+/* where */
+#where {
+  padding: 100px 0px;
+}
+
+.subscribe {
+  margin-top: 120px;
+}
+
+.normal-text {
+  margin: 0px 400px;
+  font-style: normal;
+  font-size: 16px;
+  font-family: "Quicksand", serif;
+}
+
+.email {
+  padding: 10px;
+  border: none;
+  width: 300px;
+
+  background-color: transparent;
+
+  font-style: italic;
+  font-family: "Crimson Text", serif;
+}
+
+.email::placeholder {
+  font-style: italic;
+  font-family: "Crimson Text", serif;
+}
+
+.email:focus {
+  outline: none;
+}
+
+.input-button-bottom {
+  border-bottom: 1px solid #10634e !important;
+}
+
+/* Footer */
+footer {
+  padding: 80px 0px 20px 0px;
+  background-color: #e0ecdc;
+}
+
+footer img {
+  width: 86px;
+  height: 40px;
+}
+
+.link {
+  display: inline-block;
+  color: #10634e;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #10634e;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+
+  background: #10634e;
+  transition: width 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
