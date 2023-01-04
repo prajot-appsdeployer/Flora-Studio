@@ -37,6 +37,10 @@ section {
   font-family: "Quicksand", sans-serif;
 }
 
+.no-card-border {
+  border: none;
+}
+
 /* Navbar */
 #navbar {
   transition: 0.3s ease-in-out;
@@ -89,7 +93,7 @@ section#hero {
 }
 
 #hero-carousel .carousel-inner {
-  height: 800px;
+  height: 100%;
 }
 
 #hero-carousel .carousel-item img {
@@ -370,8 +374,31 @@ section#hero {
 
 /* Contacts */
 
-.no-card-border {
-  border: none;
+.team-card {
+  position: relative;
+}
+.icon-bg {
+  color: #fff;
+}
+
+.icon-logo {
+  color: #10634e;
+}
+
+.social-row {
+  text-align: center;
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  display: flex;
+  gap: 7px;
+  opacity: 0;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+.team-card:hover .social-row {
+  opacity: 1;
 }
 
 /* out Client */
